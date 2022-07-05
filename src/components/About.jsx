@@ -3,7 +3,6 @@ import Nav from "./Nav";
 import LightSpeed from "react-reveal/LightSpeed";
 import Flip from "react-reveal/Flip";
 import Information from "./Information";
-import pf from "../img/pf.jpg";
 import { FaWhatsapp, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About() {
@@ -27,7 +26,7 @@ function About() {
 
   const image2 = {
     width: "255px",
-    height: "355px",
+    height: "255px",
     borderRadius: "50%",
     backgroundPosition: "top",
     backgroundSize: "cover",
@@ -45,7 +44,11 @@ function About() {
         <LightSpeed>
           <div style={container2}>
             <div>
-              <img style={image2} src={pf} alt="" />
+              <img
+                style={image2}
+                src="https://media-exp2.licdn.com/dms/image/C4D03AQGeP0WYsObuUQ/profile-displayphoto-shrink_200_200/0/1632045422645?e=1662595200&v=beta&t=C9YvnS9Scu7b0saX0DXTQcclfZfPEs6fBb9vgd7Jx6Q"
+                alt=""
+              />
             </div>
             <div className="icons" style={iconbox}>
               <a
