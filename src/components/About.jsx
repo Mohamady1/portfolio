@@ -62,7 +62,7 @@ function About() {
               </a>
               <a
                 className="a"
-                href="https://www.instagram.com/3umr.a7md"
+                href="https://www.instagram.com/omar.a.mohamady"
                 target="_blank"
                 rel="noreferrer"
               >
