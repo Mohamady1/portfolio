@@ -44,6 +44,7 @@ function Home() {
     backgroundColor: "rgba(0,0,0, 0.803)",
     padding: "10px",
     borderRadius: "10px",
+    fontSize: "15px",
   };
 
   return (
@@ -61,7 +62,10 @@ function Home() {
           <h3 style={note}>
             I'm{" "}
             <Typewriter
-              words={["Front-End Web Developer", "Mobile Developer soon 🤲"]}
+              words={[
+                "Front-End Web Developer",
+                "want to learn more about Mobile Developer",
+              ]}
               loop
               cursor
               cursorStyle="|"
