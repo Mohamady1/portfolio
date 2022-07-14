@@ -4,6 +4,7 @@ import land from "../img/landingpage.png";
 import books from "../img/myreads.png";
 import weather from "../img/weather.png";
 import ecommerce from "../img/ecommerce.png";
+import oceanmovies from "../img/oceanmovies.png";
 
 const projects = [
   {
@@ -47,6 +48,13 @@ const projects = [
     picture: ecommerce,
     info: "simple ecommerce website with four categories with (React)",
     link: "https://mohamady-ecommerce.netlify.app",
+  },
+  {
+    id: 7,
+    name: "Ocean Movies",
+    picture: oceanmovies,
+    info: "Movies App with simple API (React & Redux)",
+    link: "https://mohamady-oceanmovies.netlify.app",
   },
 ];
 
