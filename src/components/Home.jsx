@@ -62,10 +62,7 @@ function Home() {
           <h3 style={note}>
             I'm{" "}
             <Typewriter
-              words={[
-                "Front-End Web Developer",
-                "want to learn more about Mobile Developer",
-              ]}
+              words={["Front-End Web Developer"]}
               loop
               cursor
               cursorStyle="|"
