@@ -18,7 +18,7 @@ function Information() {
   return (
     <div>
       <h3 style={h3}>
-        Hello, my name is Omar Ahmed Mohamady based on (Cairo, Egypt), I am a
+        Hello, my name is Omar Ahmed Mohamady based in (Cairo, Egypt), I am a
         high school student at iTech School for Applied Technology.
         <br />I love programming since I was a kid and the dream is getting
         bigger and bigger day by day.
