@@ -46,7 +46,7 @@ function About() {
             <div>
               <img
                 style={image2}
-                src="https://media-exp2.licdn.com/dms/image/C4D03AQGeP0WYsObuUQ/profile-displayphoto-shrink_200_200/0/1632045422645?e=1662595200&v=beta&t=C9YvnS9Scu7b0saX0DXTQcclfZfPEs6fBb9vgd7Jx6Q"
+                src="https://media-exp1.licdn.com/dms/image/C4D03AQGeP0WYsObuUQ/profile-displayphoto-shrink_200_200/0/1632045422645?e=1668643200&v=beta&t=0mOQXJG5yv4RlqQbHJzOcZN2-4MWJpdC0882lGj9oBI"
                 alt=""
               />
             </div>
