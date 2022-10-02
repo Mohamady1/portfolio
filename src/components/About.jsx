@@ -1,7 +1,5 @@
 import React from "react";
 import Nav from "./Nav";
-import LightSpeed from "react-reveal/LightSpeed";
-import Flip from "react-reveal/Flip";
 import Information from "./Information";
 import { FaWhatsapp, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -41,7 +39,6 @@ function About() {
       </div>
 
       <div id="about" style={container}>
-        <LightSpeed>
           <div style={container2}>
             <div>
               <img
@@ -89,12 +86,9 @@ function About() {
               </a>
             </div>
           </div>
-        </LightSpeed>
-        <Flip top>
           <div className="info" style={{ width: "605px" }}>
             <Information />
           </div>
-        </Flip>
       </div>
     </div>
   );
