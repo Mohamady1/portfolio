@@ -3,7 +3,7 @@ import React, { memo } from "react";
 function Project({ picture, name, info, link }) {
   const container = {
     width: "fit-content",
-    height: "470px",
+    height: "560px",
     color: "white",
     display: "flex",
     marginTop: "20px",

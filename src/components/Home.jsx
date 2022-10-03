@@ -75,9 +75,9 @@ function Home() {
       </div>
       <Shelf shelf="About" />
       <About />
-      <Shelf shelf="Certificates in Tech Field" />
+      <Shelf shelf="Certificates" />
       <Certifcates />
-      <Shelf shelf="Top Projects I did" />
+      <Shelf shelf="Projects" />
       <Projects />
       <Shelf shelf="My Skills" />
       <Skills />
