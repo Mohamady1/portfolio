@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Nav from "./Nav";
-import Sidebar from "./Sidebar";
+import Nav from "../Nav/Nav";
+import Sidebar from "../Nav/Sidebar";
 import { AiFillPhone } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 
@@ -17,7 +17,6 @@ function Contactme() {
     flexWrap: "wrap",
     justifyContent: "space-around",
     alignItems: "center",
-    color: "white",
     position: "absolute",
     height: "fit-content",
     top: "60%",
@@ -30,7 +29,7 @@ function Contactme() {
     width: "60%",
     padding: "30px",
     height: "300px",
-    background: "linear-gradient(black, white)",
+    background: "linear-gradient(white, black)",
   };
 
   const sendEmail = (e) => {
@@ -90,10 +89,12 @@ function Contactme() {
             }}
           >
             <h1>Get in Touch</h1>
-            <AiFillPhone size={25} />
+            <AiFillPhone color="black" size={25} />
           </div>
-          <FiMail size="200" />
-          <p>Leave me a message and I will reply as soon as possible</p>
+          <FiMail color="black" size="200" />
+          <p style={{ fontFamily: "cursive" }}>
+            Leave me a message and I will reply as soon as possible
+          </p>
         </div>
         <div style={form_container}>
           {/*Container*/}

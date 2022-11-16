@@ -1,34 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
+import "../../App.css";
 
 function Nav() {
-  const [display, setDisplay] = useState(false);
   const [navbg, setNavbg] = useState(false);
-
-  const btnStyle = {
-    position: "fixed",
-    bottom: "40px",
-    right: "25px",
-    fontSize: "25px",
-    backgroundColor: "transparent",
-    color: "red",
-    padding: "9px",
-    borderRadius: "50%",
-    border: "2px solid white",
-    cursor: "pointer",
-    borderColor: "red",
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        setDisplay(true);
-      } else {
-        setDisplay(false);
-      }
-    });
-  }, []);
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -60,11 +35,7 @@ function Nav() {
         </div>
         <nav className="nav">
           <button className="button">
-            <Link to="/"> Home </Link>
-          </button>
-
-          <button className="button">
-            <a href="/#about">About</a>
+            <a href="/#about">Home</a>
           </button>
 
           <button className="button">
@@ -80,15 +51,6 @@ function Nav() {
             <Link to="/contactme"> Contact Me</Link>
           </button>
         </nav>
-        <>
-          {display && (
-            <button
-              style={btnStyle}
-              onClick={() => (document.documentElement.scrollTop = 0)}
-              className="fas fa-arrow-up"
-            ></button>
-          )}
-        </>
       </div>
     </>
   );

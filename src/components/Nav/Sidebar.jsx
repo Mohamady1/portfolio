@@ -7,8 +7,7 @@ function Sidebar() {
   return (
     <div className="navvv">
       <Menu right>
-        <Link to="/">Home</Link>
-        <a href="/#about">About</a>
+        <a href="/#about">Home</a>
         <a href="/#certifcates">Certificacions</a>
         <a href="/#projects">Projects</a>
         <a href="/#skills">Skills</a>

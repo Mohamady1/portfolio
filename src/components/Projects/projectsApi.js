@@ -1,14 +1,16 @@
-import city from "../img/cityguide.png";
-import studio from "../img/studio.png";
-import land from "../img/landingpage.png";
-import books from "../img/myreads.png";
-import weather from "../img/weather.png";
-import ecommerce from "../img/ecommerce.png";
-import oceanmovies from "../img/oceanmovies.png";
+import city from "../../img/cityguide.png";
+import studio from "../../img/studio.png";
+import land from "../../img/landingpage.png";
+import books from "../../img/myreads.png";
+import weather from "../../img/weather.png";
+import ecommerce from "../../img/ecommerce.png";
+import oceanmovies from "../../img/oceanmovies.png";
+import musicPlayer from "../../img/musicPlayer.jpg";
 
 const projects = [
   {
     id: 1,
+    technology: "Vanilla",
     name: "City Guide",
     picture: city,
     info: "This is a city guide project for Istanbul City with Map features for city and all places you should visit in Istanbul by (HTML, CSS, JavaScript)",
@@ -16,6 +18,7 @@ const projects = [
   },
   {
     id: 2,
+    technology: "Vanilla",
     name: "Studio",
     picture: studio,
     info: "Simple and responsive Web for Fake Studio With random photos by (HTML, CSS, JavaScript)",
@@ -23,6 +26,7 @@ const projects = [
   },
   {
     id: 3,
+    technology: "Vanilla",
     name: "Landing Page",
     picture: land,
     info: "A Landing page and responsive to all devices and this project was an assessment from udacity by (HTML, CSS, JavaScript)",
@@ -30,6 +34,7 @@ const projects = [
   },
   {
     id: 4,
+    technology: "React",
     name: "My Reads",
     picture: books,
     info: "Project To Search For books from api and add it to your books and filter your books with shelves (Currently Reading, Read, Want To Read) by (ReactJS)",
@@ -37,6 +42,7 @@ const projects = [
   },
   {
     id: 5,
+    technology: "React",
     name: "Weather App",
     picture: weather,
     info: "Weather to get current weather and all days of weeks with (react & redux)",
@@ -44,6 +50,7 @@ const projects = [
   },
   {
     id: 6,
+    technology: "React",
     name: "Ecommerce App",
     picture: ecommerce,
     info: "simple ecommerce website with four categories with (React)",
@@ -51,10 +58,19 @@ const projects = [
   },
   {
     id: 7,
+    technology: "React",
     name: "Ocean Movies",
     picture: oceanmovies,
     info: "Movies App with simple API (React & Redux)",
     link: "https://mohamady-oceanmovies.netlify.app",
+  },
+  {
+    id: 9,
+    technology: "React Native",
+    name: "Muisc Player",
+    picture: musicPlayer,
+    info: "Music Player App with React Native using (Spotify API & SQLite)",
+    link: "",
   },
 ];
 

@@ -4,7 +4,6 @@ function Project({ picture, name, info, link }) {
   const container = {
     width: "fit-content",
     height: "560px",
-    color: "white",
     display: "flex",
     marginTop: "20px",
     flexDirection: "column",
@@ -17,7 +16,6 @@ function Project({ picture, name, info, link }) {
     border: "1px solid red",
     borderRadius: "20px",
     width: "105px",
-    color: "white",
     height: "35px",
   };
 
@@ -32,7 +30,15 @@ function Project({ picture, name, info, link }) {
             alt=""
           />
         </div>
-        <div style={{ width: "365px" }}>
+        <div
+          style={{
+            width: "365px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            height: "195px",
+          }}
+        >
           <h1 style={{ color: "rgb(126, 21, 21)", marginBottom: "10px" }}>
             {name}
           </h1>

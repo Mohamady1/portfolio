@@ -8,7 +8,7 @@ function Certifcate({ image, paragraph }) {
     alignItems: "center",
     width: "250px",
     height: "369px",
-    boxShadow: "3px 3px 4px red",
+    boxShadow: "2px 2px 2px red",
   };
 
   const info_me = {
