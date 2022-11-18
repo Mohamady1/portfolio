@@ -1,11 +1,11 @@
-import city from "../../img/cityguide.png";
-import studio from "../../img/studio.png";
-import land from "../../img/landingpage.png";
-import books from "../../img/myreads.png";
-import weather from "../../img/weather.png";
-import ecommerce from "../../img/ecommerce.png";
-import oceanmovies from "../../img/oceanmovies.png";
-import musicPlayer from "../../img/musicPlayer.jpg";
+import city from "../../img/Projects/cityguide.png";
+import studio from "../../img/Projects/studio.png";
+import land from "../../img/Projects/landingpage.png";
+import books from "../../img/Projects/myreads.png";
+import weather from "../../img/Projects/weather.png";
+import ecommerce from "../../img/Projects/ecommerce.png";
+import oceanmovies from "../../img/Projects/oceanmovies.png";
+import musicPlayer from "../../img/Projects/musicPlayer.jpg";
 
 const projects = [
   {
@@ -67,7 +67,7 @@ const projects = [
   {
     id: 9,
     technology: "React Native",
-    name: "Muisc Player",
+    name: "Music Player",
     picture: musicPlayer,
     info: "Music Player App with React Native using (Spotify API & SQLite)",
     link: "",

@@ -1,28 +1,19 @@
 import React from "react";
 import Certifcate from "./Certifcate";
-import Access from "../../img/access.jpg";
-import Power from "../../img/powerpoint.jpg";
-import Android from "../../img/android.png";
-import C from "../../img/c.jpg";
-import Challanger from "../../img/challanger.png";
-import Data from "../../img/dataanalysis.png";
-import Advanced from "../../img/frontadvanced.png";
-import Professional from "../../img/frontprofessional.png";
-import IT from "../../img/intec.jpg";
-import ReactNAtive from "../../img/reactnative.jpg";
+import Access from "../../img/Certificates/access.jpg";
+import Power from "../../img/Certificates/powerpoint.jpg";
+import Android from "../../img/Certificates/android.png";
+import C from "../../img/Certificates/c.jpg";
+import Challanger from "../../img/Certificates/challanger.png";
+import Data from "../../img/Certificates/dataanalysis.png";
+import Advanced from "../../img/Certificates/frontadvanced.png";
+import Professional from "../../img/Certificates/frontprofessional.png";
+import IT from "../../img/Certificates/intec.jpg";
+import ReactNAtive from "../../img/Certificates/reactnative.jpg";
 
 function Certifcates() {
-  const container = {
-    marginTop: "50px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexWrap: "wrap",
-    gap: "25px",
-  };
-
   return (
-    <div id="certifcates" style={container}>
+    <div id="certifcates" className="certificatesContainer">
       <Certifcate
         image={Power}
         paragraph="Microsoft Office Specialist, Microsoft PowerPoint 2010"

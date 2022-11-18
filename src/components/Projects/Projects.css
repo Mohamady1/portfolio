@@ -1,0 +1,59 @@
+.projectsIcon {
+  display: flex;
+  gap: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.allBtn {
+  background: transparent;
+  border: none;
+  font-family: cursive;
+  font-size: 25px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectContainer {
+  width: fit-content;
+  height: 560px;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  border-right: 3px solid rgba(255, 255, 255, 0.255);
+}
+
+.projectImageContainer {
+  width: 365px;
+  height: 365px;
+  overflow: hidden;
+}
+
+.webView:hover {
+  transform: translateY(-100%);
+}
+
+.projectBtn {
+  margin: 10px;
+  background-color: transparent;
+  border: 1px solid red;
+  border-radius: 20px;
+  width: 105px;
+  height: 35px;
+}
+
+.projectInfoContainer {
+  width: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 195px;
+}

@@ -1,0 +1,35 @@
+.skillsContainer {
+  margin-top: 50px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.skillImage {
+  text-align: center;
+  border-radius: 50%;
+}
+
+.skillImage img {
+  width: 70px;
+  height: 70px;
+}
+
+.skillTitle h2 {
+  text-align: center;
+  font-family: Cursive;
+}
+
+@media screen and (max-width: 922px) {
+  .skillImage img {
+    width: 50px;
+    height: 50px;
+  }
+  .skillTitle h2 {
+    font-size: 20px;
+  }
+}

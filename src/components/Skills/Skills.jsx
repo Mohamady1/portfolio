@@ -1,21 +1,10 @@
 import React from "react";
 import Skill from "./Skill";
+import "./Skills.css";
 
 function Skills() {
   return (
-    <div
-      id="skills"
-      style={{
-        marginTop: "50px",
-        height: "fit-content",
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        alignItems: "center",
-        flexDirection: "row",
-        gap: "30px",
-      }}
-    >
+    <div id="skills" className="skillsContainer">
       <Skill
         src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
         alt="JavaScript"

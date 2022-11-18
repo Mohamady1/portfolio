@@ -1,0 +1,64 @@
+.navlink {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+}
+
+.navactive {
+  border-radius: 0 0 20px 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+  background-color: rgba(226, 217, 217, 0.61);
+  backdrop-filter: blur(6px);
+}
+
+.button {
+  text-decoration: none;
+  font-size: 15px;
+  border: 2px solid rgb(221, 70, 70);
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "cursive";
+}
+
+.nav {
+  display: flex;
+  gap: 4px;
+  color: rgb(0, 0, 0);
+}
+
+.logoNavContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 922px) {
+  .name {
+    font-size: 25px;
+  }
+  .nav {
+    display: none;
+  }
+}

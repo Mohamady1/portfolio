@@ -1,0 +1,64 @@
+.contactContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  height: fit-content;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.formContainer {
+  border-radius: 20px;
+  width: 60%;
+  padding: 30px;
+  height: 300px;
+  background: linear-gradient(white, black);
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infoLogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input {
+  width: 30%;
+  height: 30px;
+}
+
+textarea {
+  width: 50%;
+  height: 100px;
+}
+
+input,
+textarea {
+  border-radius: 8px;
+}
+
+.contactbtn {
+  background: transparent;
+  width: 85px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 20px;
+}

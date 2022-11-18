@@ -4,33 +4,11 @@ import Nav from "../Nav/Nav";
 import Sidebar from "../Nav/Sidebar";
 import { AiFillPhone } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
+import "./Contact.css";
 
 function Contactme() {
   const [word, setWord] = useState("");
   const form = useRef();
-
-  const container = {
-    display: "flex",
-    flexDirection: "row",
-    gap: "20px",
-    width: "100%",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    alignItems: "center",
-    position: "absolute",
-    height: "fit-content",
-    top: "60%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
-  };
-
-  const form_container = {
-    borderRadius: "20px",
-    width: "60%",
-    padding: "30px",
-    height: "300px",
-    background: "linear-gradient(white, black)",
-  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -66,28 +44,14 @@ function Contactme() {
   return (
     <div id="sidebar" className="contact">
       <Sidebar pageWrapId={"contact"} outerContainerId={"sidebar"} />
-      <div style={{ height: "150px" }}>
+      <div>
         <Nav />
       </div>
       {/* ------------------------------------------- */}
-      <div style={container}>
+      <div className="contactContainer">
         {/* Word */}
-
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-            }}
-          >
+        <div className="infoContainer">
+          <div className="infoLogoContainer">
             <h1>Get in Touch</h1>
             <AiFillPhone color="black" size={25} />
           </div>
@@ -96,14 +60,10 @@ function Contactme() {
             Leave me a message and I will reply as soon as possible
           </p>
         </div>
-        <div style={form_container}>
+        <div className="formContainer">
           {/*Container*/}
           <div>
-            <form
-              style={{ display: "flex", flexDirection: "column", gap: "20px" }}
-              ref={form}
-              onSubmit={sendEmail}
-            >
+            <form className="contactForm" ref={form} onSubmit={sendEmail}>
               {/* name and email */}
               <div
                 style={{

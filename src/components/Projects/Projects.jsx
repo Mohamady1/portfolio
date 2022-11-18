@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Project from "./Project";
 import projects from "./projectsApi";
+import Techs from "./Techs";
+import "./Projects.css";
 
 function Projects() {
   const [dataa, setDataa] = useState(projects);
@@ -19,7 +21,7 @@ function Projects() {
   const vanillaView = () => {
     setDataa(projects.filter((project) => project.technology === "Vanilla"));
   };
-  const vueView = () => {
+  const angularView = () => {
     setDataa(projects.filter((project) => project.technology === "Vue"));
   };
   const flutterView = () => {
@@ -28,93 +30,50 @@ function Projects() {
 
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          gap: "55px",
-          justifyContent: "center",
-          textAlign: "center",
-        }}
-      >
-        <button
-          style={{
-            background: "transparent",
-            border: "none",
-            fontFamily: "cursive",
-            fontSize: "25px",
-          }}
-          onClick={allView}
-        >
+      <div className="projectsIcon">
+        <button className="allBtn" onClick={allView}>
           All
         </button>
-        <div onClick={reactView}>
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-            alt=""
-          />
-          <h3 style={{ fontFamily: "Cursive", cursor: "pointer" }}>React</h3>
-        </div>
-        <div onClick={reactNativeView}>
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
-            alt=""
-          />
-          <h3 style={{ fontFamily: "Cursive", cursor: "pointer" }}>
-            React Native
-          </h3>
-        </div>
-        <div onClick={vanillaView}>
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-            alt=""
-          />
-          <h3 style={{ fontFamily: "Cursive", cursor: "pointer" }}>Vanilla</h3>
-        </div>
-        <div onClick={flutterView}>
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
-            alt=""
-          />
-          <h3 style={{ fontFamily: "Cursive", cursor: "pointer" }}>Flutter</h3>
-        </div>
-        <div onClick={vueView}>
-          <img
-            style={{ width: "50px", height: "50px" }}
-            src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"
-            alt=""
-          />
-          <h3 style={{ fontFamily: "Cursive", cursor: "pointer" }}>Vue</h3>
-        </div>
+        <Techs
+          exc={reactView}
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+          tech="React"
+        />
+        <Techs
+          exc={reactNativeView}
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+          tech="React Native"
+        />
+        <Techs
+          exc={vanillaView}
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+          tech="Vanilla"
+        />
+        <Techs
+          exc={flutterView}
+          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
+          tech="Flutter"
+        />
+        <Techs
+          exc={angularView}
+          src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg"
+          tech="Angular"
+        />
       </div>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "55px",
-          margin: "50px",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        id="projects"
-      >
+      <div className="projectsContainer" id="projects">
         {dataa.length !== 0 ? (
           dataa.map((project) => (
             <Project
               link={project.link}
               key={project.id}
               name={project.name}
+              tech={project.technology}
               picture={project.picture}
               info={project.info}
             />
           ))
         ) : (
-          <h1 style={{ fontFamily: "Cursive" }}>
-            I will Make Project Here Soon
-          </h1>
+          <h1 style={{ fontFamily: "Cursive" }}>Soon 🤫🔜</h1>
         )}
       </div>
     </div>

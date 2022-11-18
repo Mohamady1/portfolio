@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../../App.css";
+import "./Nav.css";
 
 function Nav() {
   const [navbg, setNavbg] = useState(false);
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 80) {
         setNavbg(true);
       } else {
         setNavbg(false);
@@ -19,14 +19,7 @@ function Nav() {
     <>
       <div className={navbg ? "navactive" : "navlink"}>
         <div style={{ display: "flex" }}>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "flex-start",
-              flexDirection: "column",
-            }}
-          >
+          <div className="logoNavContainer">
             <h1 className="name" style={{ fontFamily: "Cursive" }}>
               Omar Ahmed Mohamady
             </h1>
@@ -48,7 +41,7 @@ function Nav() {
             <a href="/#skills">Skills</a>
           </button>
           <button className="button">
-            <Link to="/contactme"> Contact Me</Link>
+            <Link to="/contactme">Contact Me</Link>
           </button>
         </nav>
       </div>

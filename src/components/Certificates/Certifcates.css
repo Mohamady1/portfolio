@@ -1,0 +1,40 @@
+.certificatesContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.certificateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 369px;
+  box-shadow: 2px 2px 2px red;
+}
+
+.infome {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.certificateImage {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.certificateImage:hover {
+  transform: scale(1.5);
+}
+
+.certificateDescription {
+  height: 100%;
+}

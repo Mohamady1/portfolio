@@ -2,21 +2,16 @@ import React from "react";
 
 function Information() {
   return (
-    <div style={{ padding: "5px" }}>
-      <h1 align="center">Hi 👋, I'm Omar Ahmed Mohamady</h1>
+    <div className="informationContainer">
+      <h1 className="name" align="center">
+        Hi 👋, I'm Omar Ahmed Mohamady
+      </h1>
       <h3 align="center" style={{ fontFamily: "Cursive" }}>
         Front-End & Application Developer | ReactJS & React Native
       </h3>
       <br />
-      <br />
-      <div
-        style={{
-          width: "70%",
-          textAlign: "center",
-          margin: "auto",
-          fontFamily: "Cursive",
-        }}
-      >
+
+      <div className="informationContainer2">
         <h4>
           P-TECH Student at school for applied technology, I like what I do and
           want to improve myself. I have a passion for learning new technologies
