@@ -21,9 +21,6 @@ function Projects() {
   const vanillaView = () => {
     setDataa(projects.filter((project) => project.technology === "Vanilla"));
   };
-  const angularView = () => {
-    setDataa(projects.filter((project) => project.technology === "Vue"));
-  };
   const flutterView = () => {
     setDataa(projects.filter((project) => project.technology === "Flutter"));
   };
@@ -53,11 +50,6 @@ function Projects() {
           exc={flutterView}
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg"
           tech="Flutter"
-        />
-        <Techs
-          exc={angularView}
-          src="https://www.vectorlogo.zone/logos/angular/angular-icon.svg"
-          tech="Angular"
         />
       </div>
       <div className="projectsContainer" id="projects">
