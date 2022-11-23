@@ -19,8 +19,8 @@ The page will reload when you make changes.\
 
 . all certificates i have in tech field
 
-. some of my top projects with latest technologies i learnt (html, css, js, react, redux)
+. some of my top projects with latest technologies i learnt
 
-. skills i have on loading bar
+. skills i have
 
 . and finally to get in touch with me with authorized with google
