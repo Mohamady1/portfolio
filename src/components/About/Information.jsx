@@ -7,7 +7,7 @@ function Information() {
         Hi 👋, I'm Omar Ahmed Mohamady
       </h1>
       <h3 align="center" style={{ fontFamily: "Cursive" }}>
-        Front-End & Application Developer | ReactJS & React Native
+        Application Developer | React Native
       </h3>
       <br />
 

@@ -7,9 +7,6 @@ import "./Projects.css";
 function Projects() {
   const [dataa, setDataa] = useState(projects);
 
-  const reactView = () => {
-    setDataa(projects.filter((project) => project.technology === "React"));
-  };
   const reactNativeView = () => {
     setDataa(
       projects.filter((project) => project.technology === "React Native")
@@ -17,9 +14,6 @@ function Projects() {
   };
   const allView = () => {
     setDataa(projects);
-  };
-  const vanillaView = () => {
-    setDataa(projects.filter((project) => project.technology === "Vanilla"));
   };
   const flutterView = () => {
     setDataa(projects.filter((project) => project.technology === "Flutter"));
@@ -32,19 +26,9 @@ function Projects() {
           All
         </button>
         <Techs
-          exc={reactView}
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
-          tech="React"
-        />
-        <Techs
           exc={reactNativeView}
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
           tech="React Native"
-        />
-        <Techs
-          exc={vanillaView}
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-          tech="Vanilla"
         />
         <Techs
           exc={flutterView}
