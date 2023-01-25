@@ -17,7 +17,7 @@ function Project({ picture, name, tech, info, link }) {
             {name}
           </h1>
           <p>{info}</p>
-          {link == "" && (
+          {link === "" && (
             <button className="projectBtn">
               <a
                 style={{ fontFamily: "Cursive" }}
