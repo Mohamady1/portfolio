@@ -1,5 +1,6 @@
 import weather from "../../img/Projects/weather.png";
 import musicPlayer from "../../img/Projects/musicPlayer.jpg";
+import weatherFlutter from "../../img/Projects/weather_flutter.jpg";
 
 const projects = [
   {
@@ -16,6 +17,14 @@ const projects = [
     name: "Weather App",
     picture: weather,
     info: "Weather App With React Native to know Weather, Wind Speed for your city",
+    link: "",
+  },
+  {
+    id: 3,
+    technology: "Flutter",
+    name: "Flutter Weather App",
+    picture: weather,
+    info: "Weather App With Flutter to know Weather, Wind Speed and Cloud Precentage for your city by location and for any city by search",
     link: "",
   },
 ];
