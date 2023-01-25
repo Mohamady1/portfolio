@@ -23,7 +23,7 @@ const projects = [
     id: 3,
     technology: "Flutter",
     name: "Flutter Weather App",
-    picture: weather,
+    picture: weatherFlutter,
     info: "Weather App With Flutter to know Weather, Wind Speed and Cloud Precentage for your city by location and for any city by search",
     link: "",
   },
