@@ -1,7 +1,7 @@
 import weather from "../../img/Projects/weather.png";
 import musicPlayer from "../../img/Projects/musicPlayer.jpg";
 import weatherFlutter from "../../img/Projects/weather_flutter.jpg";
-import toDo from "../../img/Projects/to_do.png";
+import toDo from "../../img/Projects/to-do.png";
 
 const projects = [
   {
