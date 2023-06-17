@@ -10,7 +10,7 @@ function About() {
         <div>
           <img
             className="image2"
-            src="https://sdk.bitmoji.com/render/panel/10226021-100639437520_6-s5-v1.webp?transparent=1&scale=0"
+            src="https://img.freepik.com/premium-vector/young-programmer-works-with-laptop-flat-style_758600-80.jpg?w=4000"
             alt=""
           />
         </div>

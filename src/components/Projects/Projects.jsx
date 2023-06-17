@@ -12,6 +12,7 @@ function Projects() {
       projects.filter((project) => project.technology === "React Native")
     );
   };
+
   const allView = () => {
     setDataa(projects);
   };

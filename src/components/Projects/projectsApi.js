@@ -2,6 +2,7 @@ import weather from "../../img/Projects/weather.png";
 import musicPlayer from "../../img/Projects/musicPlayer.jpg";
 import weatherFlutter from "../../img/Projects/weather_flutter.jpg";
 import toDo from "../../img/Projects/to-do.png";
+import muslim from "../../img/Projects/muslim.png";
 
 const projects = [
   {
@@ -34,6 +35,14 @@ const projects = [
     name: "To-Do App",
     picture: toDo,
     info: "To-Do App With Flutter to make your day much more productive with flutter, provider and sqflite",
+    link: "",
+  },
+  {
+    id: 5,
+    technology: "Flutter",
+    name: "Muslim Connect App",
+    picture: muslim,
+    info: "Muslim app with prayers time, Random quran verse, Azkar, Islamic live radios, Whole Quran and Mecca & Madena Live ",
     link: "",
   },
 ];
