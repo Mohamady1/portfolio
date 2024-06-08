@@ -13,7 +13,7 @@ function Information() {
 
       <div className="informationContainer2">
         <h4>
-          P-TECH Student at school for applied technology, I like what I do and
+          I like what I do and
           want to improve myself. I have a passion for learning new technologies
           and gain new valuable skills. I like to being in the workplace around
           the community who loves programming and works in tech to learn more
